@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QNXDgUg1LL4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PRAKTIKAN\\Downloads\\KPL_MOD10_SE-48_02_103022400016_ENH\\KPL_MOD10_SE-48_02_103022400016_ENH.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PRAKTIKAN\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.1\\microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "C:\\Users\\PRAKTIKAN\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
