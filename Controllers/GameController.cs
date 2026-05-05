@@ -7,21 +7,21 @@ namespace TP_MODUL10_103022400016.Controllers
     [Route("api/[controller]")]
     public class GameController : ControllerBase
     {
-        private static List<Games> games = new List<Games>
+        private static List<Game> games = new List<Game>
         {
-            new Games { Nama = "Valorant", Developer = "Riot Games", Tahun = 2020, Genre = "FPS", Rating = 8.5, Platform = ["PC"], Mode = ["Multiplayer"], IsOnline = true, Harga = 0 },
-            new Games { Nama = "GTA V", Developer = "Rockstar Games", Tahun = 2013, Genre = "Open World", Rating = 9.5, Platform = ["PC", "PS4", "PS5", "Xbox"], Mode = ["Singleplayer", "Multiplayer"], IsOnline = true, Harga = 300000 },
-            new Games { Nama = "The Witcher 3", Developer = "CD Projekt Red", Tahun = 2015, Genre = "RPG", Rating = 9.7, Platform = ["PC", "PS4", "PS5", "Xbox", "Switch"], Mode = ["Singleplayer"], IsOnline = false, Harga = 250000 }
+            new Game { Nama = "Valorant", Developer = "Riot Games", Tahun = 2020, Genre = "FPS", Rating = 8.5, Platform = ["PC"], Mode = ["Multiplayer"], IsOnline = true, Harga = 0 },
+            new Game { Nama = "GTA V", Developer = "Rockstar Games", Tahun = 2013, Genre = "Open World", Rating = 9.5, Platform = ["PC", "PS4", "PS5", "Xbox"], Mode = ["Singleplayer", "Multiplayer"], IsOnline = true, Harga = 300000 },
+            new Game { Nama = "The Witcher 3", Developer = "CD Projekt Red", Tahun = 2015, Genre = "RPG", Rating = 9.7, Platform = ["PC", "PS4", "PS5", "Xbox", "Switch"], Mode = ["Singleplayer"], IsOnline = false, Harga = 250000 }
         };
 
         [HttpGet]
-        public ActionResult<List<Games>> GetAll()
+        public ActionResult<List<Game>> GetAll()
         {
             return games;
         }
 
         [HttpGet("{index}")]
-        public ActionResult<Games> GetByIndex(int index)
+        public ActionResult<Game> GetByIndex(int index)
         {
             if (index < 0 || index >= games.Count)
                 return NotFound();
@@ -30,7 +30,7 @@ namespace TP_MODUL10_103022400016.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddFilm([FromBody] Games film)
+        public ActionResult AddFilm([FromBody] Game film)
         {
             games.Add(film);
             return Ok(games);

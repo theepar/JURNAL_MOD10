@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Games"
+                    "$ref": "#/components/schemas/Game"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Games"
+                    "$ref": "#/components/schemas/Game"
                   }
                 }
               },
@@ -42,7 +42,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Games"
+                    "$ref": "#/components/schemas/Game"
                   }
                 }
               }
@@ -58,17 +58,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Games"
+                "$ref": "#/components/schemas/Game"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Games"
+                "$ref": "#/components/schemas/Game"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Games"
+                "$ref": "#/components/schemas/Game"
               }
             }
           },
@@ -107,17 +107,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Games"
+                  "$ref": "#/components/schemas/Game"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Games"
+                  "$ref": "#/components/schemas/Game"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Games"
+                  "$ref": "#/components/schemas/Game"
                 }
               }
             }
@@ -153,7 +153,7 @@
   },
   "components": {
     "schemas": {
-      "Games": {
+      "Game": {
         "type": "object",
         "properties": {
           "nama": {

@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[KPL_MOD10_SE_48_02_103022400016_ENH.Models.Games, KPL_MOD10_SE-48_02_103022400016_ENH, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[KPL_MOD10_SE_48_02_103022400016_ENH.Models.Game, KPL_MOD10_SE-48_02_103022400016_ENH, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -29,7 +29,7 @@
     "Parameters": [
       {
         "Name": "film",
-        "Type": "KPL_MOD10_SE_48_02_103022400016_ENH.Models.Games",
+        "Type": "KPL_MOD10_SE_48_02_103022400016_ENH.Models.Game",
         "IsRequired": true
       }
     ],
@@ -51,7 +51,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "KPL_MOD10_SE_48_02_103022400016_ENH.Models.Games",
+        "Type": "KPL_MOD10_SE_48_02_103022400016_ENH.Models.Game",
         "MediaTypes": [
           "text/plain",
           "application/json",
